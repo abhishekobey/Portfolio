@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from "react"
 import "../styles/Home.scss"
-import myImage from "../../public/me.svg"
-import githubIcon from "../../public/github.png"
-import linkedInIcon from "../../public/linkedin.svg"
+import myImage from "../../public/images/me.svg"
+import githubIcon from "../../public/images/github.png"
+import linkedInIcon from "../../public/images/linkedin.svg"
+import downloadIcon from "../../public/images/download-icon.svg"
 
 const Home = () => {
     const [text, setText] = useState("");
@@ -39,6 +40,13 @@ const Home = () => {
         return () => clearTimeout(timer);
     }, [text, isDeleting, loopIndex, words, typingSpeed]);
 
+    const downloadResume = () => {
+        const link = document.createElement("a");
+        link.href = "https://drive.google.com/uc?export=download&id=1KP5DJBIDdYmj6rPXMFqDbgYYmoV3t0xV";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
 
     return (
         <div id={"home"} className={"home"}>
@@ -49,7 +57,7 @@ const Home = () => {
                     scalable, efficient, and user-centric solutions. Skilled in full-stack development and driven by a
                     desire to solve real-world problems through technology.</p>
                 <div className={"buttons-container"}>
-                    <button onClick={() => setText("")}>Resume</button>
+                    <button onClick={downloadResume}>Resume <img src={downloadIcon} alt={"download"}/></button>
                     <img src={linkedInIcon} alt={"linkedIn"}
                          onClick={() => window.open("https://www.linkedin.com/in/abhishek-obey-a825521a8/", "_blank")}/>
                     <img src={githubIcon} alt={"github"} style={{background: "#FFFFFF"}}

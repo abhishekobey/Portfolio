@@ -45,21 +45,29 @@
     gap: 20px;
     display: flex;
 
-    button {
-      width: 150px;
-      border: none;
-      color: #ffffff;
-      font-size: 16px;
-      border-radius: 50px;
-      font-family: monospace;
-      background: linear-gradient(150deg, #3b82f6 22.35%, #ec4899 100%)
-    }
-
     img {
       width: 40px;
       cursor: pointer;
       border-radius: 50px;
       border: 3px solid #ffffff;
+    }
+
+    button {
+      width: 150px;
+      border: none;
+      color: #ffffff;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 50px;
+      font-family: monospace;
+      background: linear-gradient(150deg, #3b82f6 22.35%, #ec4899 100%);
+
+      img {
+        width: 18px;
+        border: none;
+        cursor: pointer;
+        border-radius: 0;
+      }
     }
   }
 }
