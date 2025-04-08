@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from "react"
-import "../styles/Home.scss"
 import myImage from "../../public/images/me.svg"
 import githubIcon from "../../public/images/github.png"
 import linkedInIcon from "../../public/images/linkedin.svg"
