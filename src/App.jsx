@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Experience from "./components/Experience";
+import Contact from "./components/Contact";
 
 const App = () => {
     return (
@@ -13,10 +14,7 @@ const App = () => {
                 <Home/>
                 <About/>
                 <Experience/>
-                <div id="contact" style={{height: "100vh", padding: "20px"}}>
-                    <h2>Contact Section</h2>
-                    <p>This is the Contact section.</p>
-                </div>
+                <Contact/>
             </div>
         </div>
     );

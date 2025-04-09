@@ -14,8 +14,9 @@ const Experience = () => {
             descriptionList: [
                 "Developing and maintaining the Survey Heart web application, continually introducing new features to enhance user experience.",
                 "Successfully launched a premium version of our product, significantly increasing company revenue.",
+                "Collaborated with multiple internal teams to gather requirements and prioritize bug fixes and feature requests, ensuring alignment with overall project objectives.",
+                "Regularly conducted code reviews for junior developers, ensuring adherence to project standards and improving overall code quality.",
                 "Mentored and trained 3+ trainees, guiding them in React.js development and best coding practices to enhance their skills and productivity.",
-                "Implemented a Testing Tools software to enhance the efficiency of the QA team.",
                 "Developed HR Tools software to streamline operations and enhance hiring processes for the HR team."
             ]
         },
@@ -30,6 +31,7 @@ const Experience = () => {
                 "Enhanced performance and UI design by resolving over 500+ bugs in the web application.",
                 "Engineered robust admin services to manage user traffic effectively, facilitating job creation within Survey Heart and ensuring the removal of abusive users.",
                 "Designed and implemented efficient data structures for databases, integrating new features and managing API calls.",
+                "Implemented a Testing Tools software to enhance the efficiency of the QA team.",
                 "Created comprehensive API documentation using Postman, including testing APIs and backend code validation.",
                 "Conducted rigorous UI Components Tests and Unit Tests using Jest to maintain high-quality code standards.",
                 "Implemented Selenium automation tests to automate testing processes and improve web application reliability."

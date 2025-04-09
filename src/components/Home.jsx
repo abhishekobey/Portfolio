@@ -10,7 +10,7 @@ const Home = () => {
     const [isDeleting, setIsDeleting] = useState(false);
     const typingSpeed = 100
 
-    const words = ["Abhishek Obey", "MERN Developer", "FullStack Developer"];
+    const words = ["Abhishek Obey", "MERN Developer", "Web Developer", "FullStack Developer"];
 
     useEffect(() => {
         const currentWord = words[loopIndex];
