@@ -41,7 +41,7 @@ const Home = () => {
 
     const downloadResume = () => {
         const link = document.createElement("a");
-        link.href = "https://drive.google.com/uc?export=download&id=1KP5DJBIDdYmj6rPXMFqDbgYYmoV3t0xV";
+        link.href = "https://drive.google.com/uc?export=download&id=1dLrjQhh8xtYEQVLpwVxtg_qlkCTHVG-7";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

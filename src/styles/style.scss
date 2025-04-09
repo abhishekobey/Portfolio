@@ -104,3 +104,40 @@ h1, h2 {
     }
   }
 }
+
+.experience {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .experience-card {
+    width: 100%;
+    padding: 20px;
+    margin: 25px 0;
+    background: #101628;
+    border-radius: 10px;
+    border-bottom: 5px solid #ffffff;
+
+    h3 {
+      margin: 0;
+      color: #ffffff;
+      font-size: 20px;
+    }
+
+    p {
+      color: #adb7be;
+      margin: 10px 0;
+    }
+
+    span {
+      color: #3b82f6;
+    }
+
+    li {
+      color: #9ca3af;
+      font-size: 16px;
+      line-height: 25px;
+    }
+  }
+}
