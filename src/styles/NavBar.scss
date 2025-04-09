@@ -71,6 +71,7 @@
 @media (max-width: 768px) {
   .navbar {
     display: block;
+    height: fit-content;
     width: -webkit-fill-available;
 
     .navbar-links {

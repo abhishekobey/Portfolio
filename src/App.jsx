@@ -8,15 +8,15 @@ import Contact from "./components/Contact";
 
 const App = () => {
     return (
-        <div>
+        <>
             <NavBar/>
-            <div style={{margin: "0 100px"}}>
+            <div className={"container"}>
                 <Home/>
                 <About/>
                 <Experience/>
                 <Contact/>
             </div>
-        </div>
+        </>
     );
 };
 
