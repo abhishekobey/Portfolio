@@ -19,7 +19,7 @@ const NavBar = () => {
     };
 
     return (
-        <div className="navbar" style={!isOpenMenu ? {height: "auto"} : null}>
+        <div className="navbar" style={isOpenMenu ? {height: "-webkit-fill-available"} : null}>
             <div className="navbar__hamburger">
                 <a style={{textAlign: "end"}} onClick={toggleMobileMenu}>
                     {isOpenMenu ? "✖" : "☰"}
