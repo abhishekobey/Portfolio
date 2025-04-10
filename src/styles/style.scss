@@ -87,6 +87,14 @@ h1, h2 {
   align-items: center;
   flex-direction: column;
 
+  h1 {
+    margin: 100px;
+  }
+
+  .about-container {
+    display: flex;
+  }
+
   .setup-image {
     width: 40%;
     padding: 50px;
@@ -199,6 +207,7 @@ h1, h2 {
     }
 
     p {
+      width: 100%;
       margin: 24px 0;
       font-size: 14px;
       line-height: 24px;
@@ -213,6 +222,37 @@ h1, h2 {
         object-fit: cover;
         border-radius: 100vh;
         object-position: top;
+      }
+    }
+  }
+
+  .about {
+    padding: 0;
+
+    h1 {
+      margin: 50px auto 10px;
+    }
+
+    .about-container {
+      flex-direction: column-reverse;
+    }
+
+    .setup-image {
+      padding: 0;
+      width: 100%;
+
+      img {
+        transform: none;
+      }
+    }
+
+    p {
+      width: 100%;
+      font-size: 18px;
+      text-align: justify;
+
+      span {
+
       }
     }
   }

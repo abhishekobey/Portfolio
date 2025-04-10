@@ -4,8 +4,8 @@ import setupImage from "../../public/images/setup.jpeg"
 const About = () => {
     return (
         <div id="about" className={"about"}>
-            <h1 style={{margin: "100px"}}>About Me</h1>
-            <div style={{display: "flex"}}>
+            <h1>About Me</h1>
+            <div className={"about-container"}>
                 <div className={"setup-image"}>
                     <img src={setupImage} alt={"setup"}/>
                 </div>
