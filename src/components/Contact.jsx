@@ -6,34 +6,30 @@ const Contact = () => {
     const maxHeightPercentMobile = 3;
 
     window.addEventListener('scroll', () => {
-        const hider = document.getElementById('pc-hider');
         const scrollTop = window.scrollY;
         const docHeight = document.body.scrollHeight;
         const winHeight = window.innerHeight;
         const scrollBottom = docHeight - (scrollTop + winHeight); // Distance from bottom
 
-        const maxScrollDistance = (maxHeightPercentPC / 100) * docHeight; // max height in px
-        let heightPx = maxScrollDistance - scrollBottom;
+        // PC Hider
+        const pcHider = document.getElementById('pc-hider');
+        if (pcHider) {
+            const maxScrollDistancePC = (maxHeightPercentPC / 100) * docHeight;
+            let heightPxPC = maxScrollDistancePC - scrollBottom;
+            heightPxPC = Math.max(0, Math.min(maxScrollDistancePC, heightPxPC));
+            pcHider.style.height = heightPxPC + 'px';
+        }
 
-        heightPx = Math.max(0, Math.min(maxScrollDistance, heightPx)); // clamp between 0 and max
-
-        hider.style.height = heightPx + 'px';
+        // Mobile Hider
+        const mobileHider = document.getElementById('mobile-hider');
+        if (mobileHider) {
+            const maxScrollDistanceMobile = (maxHeightPercentMobile / 100) * docHeight;
+            let heightPxMobile = maxScrollDistanceMobile - scrollBottom;
+            heightPxMobile = Math.max(0, Math.min(maxScrollDistanceMobile, heightPxMobile));
+            mobileHider.style.height = heightPxMobile + 'px';
+        }
     });
 
-    window.addEventListener('scroll', () => {
-        const hider = document.getElementById('mobile-hider');
-        const scrollTop = window.scrollY;
-        const docHeight = document.body.scrollHeight;
-        const winHeight = window.innerHeight;
-        const scrollBottom = docHeight - (scrollTop + winHeight); // Distance from bottom
-
-        const maxScrollDistance = (maxHeightPercentMobile / 100) * docHeight; // max height in px
-        let heightPx = maxScrollDistance - scrollBottom;
-
-        heightPx = Math.max(0, Math.min(maxScrollDistance, heightPx)); // clamp between 0 and max
-
-        hider.style.height = heightPx + 'px';
-    });
 
     return (
         <div id="contact" className={"contact"}>
