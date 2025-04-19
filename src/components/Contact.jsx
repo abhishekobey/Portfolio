@@ -2,8 +2,7 @@ import React from 'react';
 
 const Contact = () => {
 
-    const maxHeightVh = 46;
-    const vhToPx = () => window.innerHeight / 100;
+    const maxHeightPercent = 8;
 
     window.addEventListener('scroll', () => {
         const hider = document.getElementById('hider');
@@ -12,7 +11,7 @@ const Contact = () => {
         const winHeight = window.innerHeight;
         const scrollBottom = docHeight - (scrollTop + winHeight); // Distance from bottom
 
-        const maxScrollDistance = maxHeightVh * vhToPx(); // max height in px
+        const maxScrollDistance = (maxHeightPercent / 100) * docHeight; // max height in px
         let heightPx = maxScrollDistance - scrollBottom;
 
         heightPx = Math.max(0, Math.min(maxScrollDistance, heightPx)); // clamp between 0 and max
