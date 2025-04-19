@@ -53,7 +53,7 @@ const Experience = () => {
     ]
     return (
         <div id="experience" className={"experience"}>
-            <h1 style={{margin: "100px"}}>My Experience</h1>
+            <h1>My Experience</h1>
             {React.Children.toArray(experienceData.map((data, index) => <ExperienceCard data={data} index={index}/>))}
         </div>
     )
@@ -70,24 +70,17 @@ const ExperienceCard = ({data, index}) => {
     }, []);
 
     return (
-        <div style={{display: "flex", width: "70%"}}>
+        <div className={"experience-parent-card"}>
             <div style={{height: "100%", display: "flex", flexDirection: "column", alignItems: "center"}}>
                 <span style={{width: "0", height: "30px", border: "1px solid #374151"}}/>
                 <img src={data.logo}
-                     style={{width: "80px", height: "80px", margin: "0 20px", borderRadius: "100px"}}
                      alt={"profile"}/>
                 {height ? <span style={{width: "0", height: height, border: "1px solid #374151"}}/> : null}
             </div>
             <div className={"experience-card"} ref={ref}>
                 <div style={{display: "flex"}}>
                     <h3>{data.position}</h3>
-                    {!index && <p style={{
-                        margin: "0 10px",
-                        padding: "5px",
-                        color: "#86efac",
-                        borderRadius: "5px",
-                        background: "#14532d"
-                    }}>
+                    {!index && <p className={"current"}>
                         Current
                     </p>}
                 </div>
