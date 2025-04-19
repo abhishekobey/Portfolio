@@ -207,6 +207,10 @@ h1, h2 {
     position: fixed;
     background: #121212;
   }
+
+  #mobile-hider {
+    display: none;
+  }
 }
 
 /* Mobile View */
@@ -278,10 +282,6 @@ h1, h2 {
       width: 100%;
       font-size: 18px;
       text-align: justify;
-
-      span {
-
-      }
     }
   }
 
@@ -326,6 +326,14 @@ h1, h2 {
 
     iframe {
       height: -webkit-fill-available;
+    }
+
+    #pc-hider {
+      display: none;
+    }
+
+    #mobile-hider {
+      display: block;
     }
   }
 }
