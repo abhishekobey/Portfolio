@@ -3,7 +3,7 @@ import React from 'react';
 const Contact = () => {
 
     const maxHeightPercentPC = 6.5;
-    const maxHeightPercentMobile = 1;
+    const maxHeightPercentMobile = 3;
 
     window.addEventListener('scroll', () => {
         const hider = document.getElementById('pc-hider');
