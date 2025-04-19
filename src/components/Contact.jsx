@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
 
-    const maxHeightPercent = 8;
+    const maxHeightPercent = 6.5;
 
     window.addEventListener('scroll', () => {
         const hider = document.getElementById('hider');
